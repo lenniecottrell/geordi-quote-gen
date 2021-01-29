@@ -8,13 +8,17 @@ const randomInt  = (min, max) => {
   return num;
 }
 
-function fixMobileHover() {
-  var el = this;
-  var parent = el.parentNode;
-  var next = el.nextSibling;
-  parent.removeChild(el)
-  setTimeout(function() {parent.insertBefore(el, next);}, 0)
-}
+
+//come back to this 
+//https://stackoverflow.com/questions/17233804/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices
+
+// function fixMobileHover() {
+//   var el = this;
+//   var parent = el.parentNode;
+//   var next = el.nextSibling;
+//   parent.removeChild(el)
+//   setTimeout(function() {parent.insertBefore(el, next);}, 0)
+// }
 
 const actions = ["refocus", "amplify", "synchronize", "redirect", "recalibrate", "modulate", "oscillate", "intensify", "nullify", "boost", "reverse", "reconfigure", "actuate", "focus", "invert", "reroute", "modify", "restrict", "reset", "extend"];
 
