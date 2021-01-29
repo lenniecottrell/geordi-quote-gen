@@ -8,6 +8,14 @@ const randomInt  = (min, max) => {
   return num;
 }
 
+function fixMobileHover() {
+  var el = this;
+  var parent = el.parentNode;
+  var next = el.nextSibling;
+  parent.removeChild(el)
+  setTimeout(function() {parent.insertBefore(el, next);}, 0)
+}
+
 const actions = ["refocus", "amplify", "synchronize", "redirect", "recalibrate", "modulate", "oscillate", "intensify", "nullify", "boost", "reverse", "reconfigure", "actuate", "focus", "invert", "reroute", "modify", "restrict", "reset", "extend"];
 
 const descriptions = ["microscopic", "macroscopic", "linear", "non-linear", "isometric", "multivariant", "nano", "phased", "master", "auxiliary", "primary", "secondary", "tertiary", "back-up", "polynodal", "multiphasic", "emergency", "tri-fold", "balanced", "oscillating"];
