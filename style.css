@@ -69,3 +69,20 @@ section {
   opacity: 1;
   transform: scale(1, 1);
 }
+
+/* iPhone XR 1792x828px at 326ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  #randomQuote {
+    min-height: 72px;
+    max-width: 10em;
+    margin-top: 3em;
+  }
+}
+
+/* iPhone XS 2688x1242px at 458ppi*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #randomQuote {
+    min-height: 72px;
+    max-width: 15em;
+  }
+}
