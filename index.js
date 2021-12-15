@@ -17,7 +17,7 @@ const randomInt  = (min, max) => {
 //   var parent = el.parentNode;
 //   var next = el.nextSibling;
 //   parent.removeChild(el)
-//   setTimeout(function() {parent.insertBefore(el, next);}, 0)
+//   setTimeout(function() {parent.insertBefore(el, next);}, 500)
 // }
 
 const actions = ["refocus", "amplify", "synchronize", "redirect", "recalibrate", "modulate", "oscillate", "intensify", "nullify", "boost", "reverse", "reconfigure", "actuate", "focus", "invert", "reroute", "modify", "restrict", "reset", "extend"];
@@ -47,7 +47,7 @@ btn.onclick = () => {
 
   let quoteTemplate2 = `We need to ${randomAction} the ${randomDescription} ${randomSource} ${randomEffect} ${randomDevice}. It's gonna be at least ${randomInt(2, 10)} ${randomTimeUnit}, if we're lucky.`
 
-  let quoteTemplate3 = `I'll need some help to ${randomAction} the ${randomDescription} ${randomSource} ${randomEffect} ${randomDevice}. I think it'll be ${randomInt(1, 3)}-${randomInt(4, 8)} ${randomTimeUnit}.`
+  let quoteTemplate3 = `I'll need some help to ${randomAction} the ${randomDescription} ${randomSource} ${randomEffect} ${randomDevice}. I think it'll be ${randomInt(2, 3)}-${randomInt(4, 5)} ${randomTimeUnit}.`
 
   let quoteTemplate4 = `I'll see if we can ${randomAction} the ${randomDescription} ${randomSource} ${randomEffect} ${randomDevice}. It'll  take about ${randomInt(2, 10)} ${randomTimeUnit}.`
 
